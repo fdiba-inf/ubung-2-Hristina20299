@@ -5,9 +5,8 @@ import java.util.Scanner;
 public class DayOfWeek {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    System.out.print("Number: ");
+    System.out.print("Day of week: ");
     int a = input.nextInt();
-    System.out.println("Day of week: ");
     if (a == 1) {
       System.out.println("Monday");
     } else if (a == 2) {
