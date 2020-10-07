@@ -5,9 +5,10 @@ import java.util.Scanner;
 public class QuadraticEquation {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
-    int a = 2;
-    int b = 7;
-    int c = 2;
+    System.out.print("a, b, c: ");
+    int a = input.nextInt();
+    int b = input.nextInt();
+    int c = input.nextInt();
     if (a != 0) {
       double d = ((b * b) - (4 * a * c));
       if (d >= 0) {
