@@ -1,8 +1,12 @@
 package exercise2;
 
+import java.util.Scanner;
+
 public class DayOfWeek {
   public static void main(String[] args) {
-    int a = 9;
+    Scanner input = new Scanner(System.in);
+    System.out.print("Number: ");
+    int a = input.nextInt();
     System.out.println("Day of week: " + a);
     if (a == 1) {
       System.out.println("Monday");
