@@ -7,9 +7,10 @@ public class SumOfDigits {
     Scanner input = new Scanner(System.in);
     System.out.print("Values: ");
     int a = input.nextInt();
-    int b = input.nextInt();
-    int c = input.nextInt();
-    double sum = (a + b + c);
+    int b = a % 10;
+    int c = (a / 10) % 10;
+    int d = (a / 100) % 10;
+    int sum = b + c + d;
     System.out.println("Sum of digits: " + sum);
   }
 }

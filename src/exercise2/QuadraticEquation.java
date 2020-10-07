@@ -6,14 +6,14 @@ public class QuadraticEquation {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     System.out.print("a, b, c: ");
-    int a = input.nextInt();
-    int b = input.nextInt();
-    int c = input.nextInt();
+    double a = input.nextInt();
+    double b = input.nextInt();
+    double c = input.nextInt();
     if (a != 0) {
       double d = ((b * b) - (4 * a * c));
       if (d >= 0) {
-        double xeins = (- b + (Math.sqrt(b * b) - (4 * a * c))) / (2 * a);
-        double xzwei = (- b + (Math.sqrt(b * b) + (4 * a * c))) / (2 * a);
+        double xeins = ((-b) + (Math.sqrt(b * b) + (4 * a * c)) / (2 * a));
+        double xzwei = ((-b) - (Math.sqrt(b * b) + (4 * a * c)) / (2 * a));
         System.out.println("x1 = " + xeins);
         System.out.println("x2 = " + xzwei);
       } else {
@@ -21,7 +21,7 @@ public class QuadraticEquation {
       }
     } else {
       if (b != 0) {
-        double x = (c / b);
+        double x = -(c/b);
         System.out.println("x = " + x);
       } else {
         if (c != 0) {
