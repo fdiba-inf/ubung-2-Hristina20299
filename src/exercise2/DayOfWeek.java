@@ -2,7 +2,7 @@ package exercise2;
 
 public class DayOfWeek {
   public static void main(String[] args) {
-    int a = 2;
+    int a = 9;
     System.out.println("Day of week: " + a);
     if (a == 1) {
       System.out.println("Monday");
@@ -18,6 +18,8 @@ public class DayOfWeek {
       System.out.println("Saturday");
     } else if (a == 7) {
       System.out.println("Sunday");
+    } else if (a > 7) {
+      System.out.println("Invalid day");
     }
 
   }
