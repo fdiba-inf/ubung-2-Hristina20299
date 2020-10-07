@@ -14,8 +14,7 @@ public class QuadraticEquation {
       if (d >= 0) {
         double xeins = ((-b - Math.sqrt(d)) / (2 * a));
         double xzwei = ((-b + Math.sqrt(d)) / (2 * a));
-        System.out.println("x1 = " + xeins);
-        System.out.println("x2 = " + xzwei);
+        System.out.println(xeins + ", " + xzwei);
       } else {
         System.out.println("Imaginary values");
       }
